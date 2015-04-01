@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>Raspberry</Name>
+    <ProjectGuid>{0298760d-533c-440e-97a1-bc5568114786}</ProjectGuid>
+    <RootNamespace>Raspberry</RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\cache\dev\assetic\routing.yml" />
+    <Compile Include="app\cache\dev\appDevDebugProjectContainer.php" />
+    <Compile Include="app\cache\dev\appDevDebugProjectContainer.php.meta" />
+    <Compile Include="app\cache\dev\appDevDebugProjectContainer.xml" />
+    <Compile Include="app\cache\dev\appDevDebugProjectContainerCompiler.log" />
+    <Compile Include="app\cache\dev\classes.map" />
+    <Compile Include="app\cache\.gitkeep" />
+    <Compile Include="app\config\config.yml" />
+    <Compile Include="app\config\config_dev.yml" />
+    <Compile Include="app\config\config_prod.yml" />
+    <Compile Include="app\config\config_test.yml" />
+    <Compile Include="app\config\parameters.yml" />
+    <Compile Include="app\config\parameters.yml.dist" />
+    <Compile Include="app\config\routing.yml" />
+    <Compile Include="app\config\routing_dev.yml" />
+    <Compile Include="app\config\security.yml" />
+    <Compile Include="app\config\services.yml" />
+    <Compile Include="app\Resources\views\default\index.html.twig" />
+    <Compile Include="app\Resources\views\base.html.twig" />
+    <Compile Include="app\.htaccess" />
+    <Compile Include="app\AppCache.php" />
+    <Compile Include="app\AppKernel.php" />
+    <Compile Include="app\autoload.php" />
+    <Compile Include="app\bootstrap.php.cache" />
+    <Compile Include="app\check.php" />
+    <Compile Include="app\console" />
+    <Compile Include="app\phpunit.xml.dist" />
+    <Compile Include="app\SymfonyRequirements.php" />
+    <Compile Include="bin\doctrine" />
+    <Compile Include="bin\doctrine.bat" />
+    <Compile Include="bin\doctrine.php" />
+    <Compile Include="bin\doctrine.php.bat" />
+    <Compile Include="bin\security-checker" />
+    <Compile Include="bin\security-checker.bat" />
+    <Compile Include="src\AppBundle\Controller\DefaultController.php" />
+    <Compile Include="src\AppBundle\Tests\Controller\DefaultControllerTest.php" />
+    <Compile Include="src\AppBundle\AppBundle.php" />
+    <Compile Include="src\.htaccess" />
+    <Compile Include="src\Raspberry\ApiBundle\Controller\ImagesController.php" />
+    <Compile Include="src\Raspberry\ApiBundle\DependencyInjection\Configuration.php" />
+    <Compile Include="src\Raspberry\ApiBundle\DependencyInjection\RaspberryApiExtension.php" />
+    <Compile Include="src\Raspberry\ApiBundle\RaspberryApiBundle.php" />
+    <Compile Include="src\Raspberry\ApiBundle\Tests\Controller\ImagesControllerTest.php" />
+    <Compile Include="src\Raspberry\HomeBundle\Controller\DefaultController.php" />
+    <Compile Include="src\Raspberry\HomeBundle\DependencyInjection\Configuration.php" />
+    <Compile Include="src\Raspberry\HomeBundle\DependencyInjection\RaspberryHomeExtension.php" />
+    <Compile Include="src\Raspberry\HomeBundle\RaspberryHomeBundle.php" />
+    <Compile Include="src\Raspberry\HomeBundle\Tests\Controller\DefaultControllerTest.php" />
+    <Compile Include="web\bundles\framework\css\body.css" />
+    <Compile Include="web\bundles\framework\css\exception.css" />
+    <Compile Include="web\bundles\framework\css\structure.css" />
+    <Compile Include="web\bundles\framework\images\blue_picto_less.gif" />
+    <Compile Include="web\bundles\framework\images\blue_picto_more.gif" />
+    <Compile Include="web\bundles\framework\images\grey_magnifier.png" />
+    <Compile Include="web\bundles\framework\images\logo_symfony.png" />
+    <Compile Include="web\bundles\sensiodistribution\webconfigurator\css\configurator.css" />
+    <Compile Include="web\bundles\sensiodistribution\webconfigurator\css\install.css" />
+    <Compile Include="web\bundles\sensiodistribution\webconfigurator\images\blue-arrow.png" />
+    <Compile Include="web\bundles\sensiodistribution\webconfigurator\images\favicon.ico" />
+    <Compile Include="web\bundles\sensiodistribution\webconfigurator\images\notification.gif" />
+    <Compile Include="web\.htaccess" />
+    <Compile Include="web\app.php" />
+    <Compile Include="web\apple-touch-icon.png" />
+    <Compile Include="web\app_dev.php" />
+    <Compile Include="web\config.php" />
+    <Compile Include="web\favicon.ico" />
+    <Compile Include="web\Raspberry.phpproj" />
+    <Compile Include="web\robots.txt" />
+    <Compile Include=".gitignore" />
+    <Compile Include="composer.json" />
+    <Compile Include="composer.lock" />
+    <Compile Include="LICENSE" />
+    <Compile Include="README.md" />
+    <Compile Include="UPGRADE-2.2.md" />
+    <Compile Include="UPGRADE-2.3.md" />
+    <Compile Include="UPGRADE-2.4.md" />
+    <Compile Include="UPGRADE.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\cache\dev\annotations" />
+    <Folder Include="app\cache\dev\assetic" />
+    <Folder Include="app\cache\dev\doctrine\orm\Proxies" />
+    <Folder Include="app\cache\dev\doctrine\orm" />
+    <Folder Include="app\cache\dev\doctrine" />
+    <Folder Include="app\cache\dev" />
+    <Folder Include="app\cache" />
+    <Folder Include="app\config" />
+    <Folder Include="app\Resources\views\default" />
+    <Folder Include="app\Resources\views" />
+    <Folder Include="app\Resources" />
+    <Folder Include="app" />
+    <Folder Include="bin" />
+    <Folder Include="src\AppBundle\Controller" />
+    <Folder Include="src\AppBundle\Tests\Controller" />
+    <Folder Include="src\AppBundle\Tests" />
+    <Folder Include="src\AppBundle" />
+    <Folder Include="src" />
+    <Folder Include="src\Raspberry\" />
+    <Folder Include="src\Raspberry\ApiBundle\" />
+    <Folder Include="src\Raspberry\ApiBundle\Controller\" />
+    <Folder Include="src\Raspberry\ApiBundle\DependencyInjection\" />
+    <Folder Include="src\Raspberry\ApiBundle\Resources\" />
+    <Folder Include="src\Raspberry\ApiBundle\Resources\config\" />
+    <Folder Include="src\Raspberry\ApiBundle\Resources\views\" />
+    <Folder Include="src\Raspberry\ApiBundle\Resources\views\Default\" />
+    <Folder Include="src\Raspberry\ApiBundle\Tests\" />
+    <Folder Include="src\Raspberry\ApiBundle\Tests\Controller\" />
+    <Folder Include="src\Raspberry\HomeBundle\" />
+    <Folder Include="src\Raspberry\HomeBundle\Controller\" />
+    <Folder Include="src\Raspberry\HomeBundle\DependencyInjection\" />
+    <Folder Include="src\Raspberry\HomeBundle\Resources\" />
+    <Folder Include="src\Raspberry\HomeBundle\Resources\config\" />
+    <Folder Include="src\Raspberry\HomeBundle\Resources\public\" />
+    <Folder Include="src\Raspberry\HomeBundle\Resources\public\css\" />
+    <Folder Include="src\Raspberry\HomeBundle\Resources\public\css\images\" />
+    <Folder Include="src\Raspberry\HomeBundle\Resources\public\js\" />
+    <Folder Include="src\Raspberry\HomeBundle\Resources\public\js\locales\" />
+    <Folder Include="src\Raspberry\HomeBundle\Resources\views\" />
+    <Folder Include="src\Raspberry\HomeBundle\Resources\views\Default\" />
+    <Folder Include="src\Raspberry\HomeBundle\Tests\" />
+    <Folder Include="src\Raspberry\HomeBundle\Tests\Controller\" />
+    <Folder Include="web\bundles\framework\css" />
+    <Folder Include="web\bundles\framework\images" />
+    <Folder Include="web\bundles\framework" />
+    <Folder Include="web\bundles\raspberryhome\" />
+    <Folder Include="web\bundles\raspberryhome\css\" />
+    <Folder Include="web\bundles\raspberryhome\css\images\" />
+    <Folder Include="web\bundles\raspberryhome\js\" />
+    <Folder Include="web\bundles\raspberryhome\js\locales\" />
+    <Folder Include="web\bundles\sensiodistribution\webconfigurator\css" />
+    <Folder Include="web\bundles\sensiodistribution\webconfigurator\images" />
+    <Folder Include="web\bundles\sensiodistribution\webconfigurator" />
+    <Folder Include="web\bundles\sensiodistribution" />
+    <Folder Include="web\bundles" />
+    <Folder Include="web" />
+    <Folder Include="web\css\" />
+    <Folder Include="web\fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\Raspberry\ApiBundle\Resources\config\routing.yml" />
+    <Content Include="src\Raspberry\ApiBundle\Resources\config\services.yml" />
+    <Content Include="src\Raspberry\ApiBundle\Resources\views\Default\index.html.twig" />
+    <Content Include="src\Raspberry\HomeBundle\Resources\config\routing.yml" />
+    <Content Include="src\Raspberry\HomeBundle\Resources\config\services.yml" />
+    <Content Include="src\Raspberry\HomeBundle\Resources\public\css\capture.css" />
+    <Content Include="src\Raspberry\HomeBundle\Resources\public\css\datepicker.css" />
+    <Content Include="src\Raspberry\HomeBundle\Resources\public\css\home.css" />
+    <Content Include="src\Raspberry\HomeBundle\Resources\public\css\images\background.jpg" />
+    <Content Include="src\Raspberry\HomeBundle\Resources\public\js\bootstrap-datepicker.js" />
+    <Content Include="src\Raspberry\HomeBundle\Resources\public\js\locales\bootstrap-datepicker.fr.js" />
+    <Content Include="src\Raspberry\HomeBundle\Resources\views\Default\capture.html.twig" />
+    <Content Include="src\Raspberry\HomeBundle\Resources\views\Default\config.html.twig" />
+    <Content Include="src\Raspberry\HomeBundle\Resources\views\Default\index.html.twig" />
+    <Content Include="src\Raspberry\HomeBundle\Resources\views\layout.html.twig" />
+    <Content Include="web\bundles\raspberryhome\css\capture.css" />
+    <Content Include="web\bundles\raspberryhome\css\datepicker.css" />
+    <Content Include="web\bundles\raspberryhome\css\home.css" />
+    <Content Include="web\bundles\raspberryhome\css\images\background.jpg" />
+    <Content Include="web\bundles\raspberryhome\js\bootstrap-datepicker.js" />
+    <Content Include="web\bundles\raspberryhome\js\locales\bootstrap-datepicker.fr.js" />
+    <Content Include="web\css\bootstrap-cosmo.css" />
+    <Content Include="web\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="web\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="web\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="web\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="web\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="web\web.config" />
+  </ItemGroup>
+</Project>

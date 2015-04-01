@@ -1,0 +1,4 @@
+services:
+#    raspberry_api.example:
+#        class: Raspberry\ApiBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

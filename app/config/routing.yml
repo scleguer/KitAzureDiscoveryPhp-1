@@ -1,0 +1,11 @@
+raspberry_api:
+    resource: "@RaspberryApiBundle/Resources/config/routing.yml"
+    prefix:   /
+
+raspberry_home:
+    resource: "@RaspberryHomeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

@@ -1,0 +1,14 @@
+raspberry_api_images_list:
+  path: /images.{_format}
+  defaults:
+    _controller: RaspberryApiBundle:Images:list
+  requirements:
+    _format: json
+raspberry_api_images_upload: 
+  path: /images/upload
+  defaults:
+    _controller: RaspberryApiBundle:Images:upload
+raspberry_api_images_delete: 
+  path: /images/delete
+  defaults:
+    _controller: RaspberryApiBundle:Images:delete

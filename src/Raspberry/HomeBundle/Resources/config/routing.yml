@@ -1,0 +1,13 @@
+raspberry_home_index:
+  pattern: /
+  defaults:
+    _controller: RaspberryHomeBundle:Default:index
+    permanent: true
+raspberry_home_captures:
+  path: /captures
+  defaults:
+    _controller: RaspberryHomeBundle:Default:index
+raspberry_home_capture:
+  path: /capture
+  defaults:
+    _controller: RaspberryHomeBundle:Default:capture

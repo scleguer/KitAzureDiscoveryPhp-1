@@ -1,0 +1,28 @@
+{% extends "::base.html.twig" %}
+
+{% block javascripts %}
+  {{ parent() }}
+  {% javascripts 
+    '@RaspberryHomeBundle/Resources/public/js/*'
+    '@RaspberryHomeBundle/Resources/public/js/locales/*' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets 
+        'bundles/raspberryhome/css/home.css' 
+        'bundles/raspberryhome/css/datepicker.css' 
+        filter='cssrewrite' %}
+    <link rel="stylesheet" type="text/css" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% endblock %}
+
+{% block title %}Captures - {{ parent() }}{% endblock %}
+
+{% block body %}
+
+{% block raspberrycaptures_body %}{% endblock %}
+
+{% endblock %}
