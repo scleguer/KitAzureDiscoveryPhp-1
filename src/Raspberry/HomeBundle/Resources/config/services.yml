@@ -1,0 +1,7 @@
+parameters:
+#    raspberry_home.example.class: Raspberry\HomeBundle\Example
+
+services:
+#    raspberry_home.example:
+#        class: %raspberry_home.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
