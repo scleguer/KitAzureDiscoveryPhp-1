@@ -1,69 +1,65 @@
-Symfony Standard Edition
-========================
+# Kit Azure Discovery pour PHP
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony2
-application that you can use as the skeleton for your new applications.
+Ce projet est destiné à vous aider à découvrir Windows Azure. Si vous le 
+déployez sur une Application Web Azure, vous pourrez alors utiliser votre 
+webcam pour effectuer des captures écran s'appuyant sur une détection de 
+mouvement.
 
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
+## Un projet Symfony 2
 
-What's inside?
---------------
+Ce projet s'appuie sur le framework PHP Symfony 2.
 
-The Symfony Standard Edition is configured with the following defaults:
+### Console KUDU
 
-  * An AppBundle you can use to start coding;
+Après avoir déployé les sources de ce projet sur une Application Web Azure,
+vous devrez passer les lignes de commandes ci-dessous pour que application
+fonctionne correctement en mode production. Cela permettra d'installer les 
+indispensables bibliothèques ainsi que de générer les fichiers JS et CSS 
+nécessaires.
 
-  * Twig as the only configured template engine;
+Utilisez pour cela la console proposée par KUDU et rendue disponible par 
+Windows Azure. 
 
-  * Doctrine ORM/DBAL;
+Pour y accéder, utiliser l'URL https://lenomdevotreapplication.scm.azurewebsites.net, 
+puis sélectionnez la catégorie :
 
-  * Swiftmailer;
+> Debug console 
 
-  * Annotations enabled for everything.
+puis la commande :
 
-It comes pre-configured with the following bundles:
+> CMD
 
-  * **FrameworkBundle** - The core Symfony framework bundle
+### Installation de composer
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
+Afin de pouvoir procéder à l'installation des bibliothèques attendues pour 
+ce projet, vous devrez installer composer grâce à la ligne de commande suivante :
 
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
+```
+```
 
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
+### Installation des bibliothèques
 
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
+Déplacez-vous ensuite à l'intérieur du dossier wwwroot, contenu dans le dossier
+site :
 
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
+```
+D:\home>cd site\wwwroot
+```
 
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
+Puis, appeler la commande composer pour installer les dépendances :
 
-  * [**AsseticBundle**][12] - Adds support for Assetic, an asset processing
-    library
+```
+D:\home\site\wwwroot>php composer.phar install
+```
 
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
+### Génération des fichiers
 
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
+Enfin, utilisez la commande qui suit pour générer les fichiers CSS et JS :
 
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
-    capabilities
+```
+D:\home\site\wwwroot>php app/console assetic:dump --env=prod --no-debug
+```
 
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
+Testez votre site déployé sur Windows Azure à l'URL : http://lenomdevotreapplication.azurewebsites.net
 
-Enjoy!
-
-[1]:  http://symfony.com/doc/2.6/book/installation.html
-[6]:  http://symfony.com/doc/2.6/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  http://symfony.com/doc/2.6/book/doctrine.html
-[8]:  http://symfony.com/doc/2.6/book/templating.html
-[9]:  http://symfony.com/doc/2.6/book/security.html
-[10]: http://symfony.com/doc/2.6/cookbook/email.html
-[11]: http://symfony.com/doc/2.6/cookbook/logging/monolog.html
-[12]: http://symfony.com/doc/2.6/cookbook/assetic/asset_management.html
-[13]: http://symfony.com/doc/2.6/bundles/SensioGeneratorBundle/index.html
+Et voilà ;)
