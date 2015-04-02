@@ -31,23 +31,23 @@ puis la commande :
 
 ### Installation de composer
 
-Afin de pouvoir procéder à l'installation des bibliothèques attendues pour 
-ce projet, vous devrez installer composer grâce à la ligne de commande suivante :
-
-```
-D:\home>curl -sS https://getcomposer.org/installer | php
-```
-
-### Installation des bibliothèques
-
-Déplacez-vous ensuite à l'intérieur du dossier wwwroot, contenu dans le dossier
+Pour commencer, déplacez-vous ensuite à l'intérieur du dossier wwwroot, contenu dans le dossier
 site :
 
 ```
 D:\home>cd site\wwwroot
 ```
 
-Puis, appeler la commande composer pour installer les dépendances :
+Afin de pouvoir procéder à l'installation des bibliothèques attendues pour 
+ce projet, vous devrez installer composer grâce à la ligne de commande suivante :
+
+```
+D:\home\site\wwwroot>curl -sS https://getcomposer.org/installer | php
+```
+
+### Installation des bibliothèques
+
+Ensuite, Appelez la commande composer pour installer les dépendances :
 
 ```
 D:\home\site\wwwroot>php composer.phar install
