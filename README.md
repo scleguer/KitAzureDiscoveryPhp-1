@@ -53,6 +53,9 @@ Ensuite, Appelez la commande composer pour installer les dépendances :
 D:\home\site\wwwroot>php composer.phar install
 ```
 
+Lorsque la configuration des paramètres vous est demandé, laissez toutes les valeurs
+par défaut.
+
 ### Génération des fichiers
 
 Enfin, utilisez la commande qui suit pour générer les fichiers CSS et JS :
