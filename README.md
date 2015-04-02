@@ -53,7 +53,7 @@ Ensuite, Appelez la commande composer pour installer les dépendances :
 D:\home\site\wwwroot>php composer.phar install
 ```
 
-Lorsque la configuration des paramètres vous est demandé, laissez toutes les valeurs
+Lorsque la configuration des paramètres vous est demandée, laissez toutes les valeurs
 par défaut.
 
 ### Génération des fichiers
