@@ -35,6 +35,7 @@ Afin de pouvoir procéder à l'installation des bibliothèques attendues pour
 ce projet, vous devrez installer composer grâce à la ligne de commande suivante :
 
 ```
+D:\home>curl -sS https://getcomposer.org/installer | php
 ```
 
 ### Installation des bibliothèques
