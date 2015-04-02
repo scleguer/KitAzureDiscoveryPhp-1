@@ -141,6 +141,10 @@
             // Get data
             var dataUrl = canvasToSave.toDataURL();
 
+            // Update the current capture image source
+            currentCapture.src = dataUrl;
+            currentCaptureContainer.style.display = "block";
+
             // Call the service to save the image to a file on the server
             $.ajax({
                 type: 'POST',
@@ -151,8 +155,7 @@
                     base64: dataUrl
                 },
                 success: function (data, textStatus, jqXHR) {
-                    currentCapture.src = dataUrl;
-                    currentCaptureContainer.style.display = "block";
+                    
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     $('#infos').html(errorThrown);
