@@ -1,8 +1,8 @@
 # Kit Azure Discovery pour PHP
 
-Ce projet est destinÈ ‡ vous aider ‡ dÈcouvrir Windows Azure. Si vous le 
-dÈployez sur une Application Web Azure, vous pourrez alors utiliser votre 
-webcam pour effectuer des captures Ècran s'appuyant sur une dÈtection de 
+Ce projet est destin√© √† vous aider √† d√©couvrir Microsoft Azure. Si vous le 
+d√©ployez sur une Application Web Azure, vous pourrez alors utiliser votre 
+webcam pour effectuer des captures √©cran s'appuyant sur une d√©tection de 
 mouvement.
 
 ## Un projet Symfony 2
@@ -11,17 +11,17 @@ Ce projet s'appuie sur le framework PHP Symfony 2.
 
 ### Console KUDU
 
-AprËs avoir dÈployÈ les sources de ce projet sur une Application Web Azure,
+Apr√®s avoir d√©ploy√© les sources de ce projet sur une Application Web Azure,
 vous devrez passer les lignes de commandes ci-dessous pour que application
 fonctionne correctement en mode production. Cela permettra d'installer les 
-indispensables bibliothËques ainsi que de gÈnÈrer les fichiers JS et CSS 
-nÈcessaires.
+indispensables biblioth√®ques ainsi que de g√©n√©rer les fichiers JS et CSS 
+n√©cessaires.
 
-Utilisez pour cela la console proposÈe par KUDU et rendue disponible par 
-Windows Azure. 
+Utilisez pour cela la console propos√©e par KUDU et rendue disponible par 
+Microsoft Azure. 
 
-Pour y accÈder, utiliser l'URL https://lenomdevotreapplication.scm.azurewebsites.net, 
-puis sÈlectionnez la catÈgorie :
+Pour y acc√©der, utiliser l'URL https://lenomdevotreapplication.scm.azurewebsites.net, 
+puis s√©lectionnez la cat√©gorie :
 
 > Debug console 
 
@@ -31,39 +31,39 @@ puis la commande :
 
 ### Installation de composer
 
-Pour commencer, dÈplacez-vous ensuite ‡ l'intÈrieur du dossier wwwroot, contenu dans le dossier
+Pour commencer, d√©placez-vous ensuite √† l'int√©rieur du dossier wwwroot, contenu dans le dossier
 site :
 
 ```
 D:\home>cd site\wwwroot
 ```
 
-Afin de pouvoir procÈder ‡ l'installation des bibliothËques attendues pour 
-ce projet, vous devrez installer composer gr‚ce ‡ la ligne de commande suivante :
+Afin de pouvoir proc√©der √† l'installation des biblioth√®ques attendues pour 
+ce projet, vous devrez installer composer gr√¢ce √† la ligne de commande suivante :
 
 ```
 D:\home\site\wwwroot>curl -sS https://getcomposer.org/installer | php
 ```
 
-### Installation des bibliothËques
+### Installation des biblioth√®ques
 
-Ensuite, Appelez la commande composer pour installer les dÈpendances :
+Ensuite, Appelez la commande composer pour installer les d√©pendances :
 
 ```
 D:\home\site\wwwroot>php composer.phar install
 ```
 
-Lorsque la configuration des paramËtres vous est demandÈe, laissez toutes les valeurs
-par dÈfaut.
+Lorsque la configuration des param√®tres vous est demand√©e, laissez toutes les valeurs
+par d√©faut.
 
-### GÈnÈration des fichiers
+### G√©n√©ration des fichiers
 
-Enfin, utilisez la commande qui suit pour gÈnÈrer les fichiers CSS et JS :
+Enfin, utilisez la commande qui suit pour g√©n√©rer les fichiers CSS et JS :
 
 ```
 D:\home\site\wwwroot>php app/console assetic:dump --env=prod --no-debug
 ```
 
-Testez votre site dÈployÈ sur Windows Azure ‡ l'URL : http://lenomdevotreapplication.azurewebsites.net
+Testez votre site d√©ploy√© sur Microsoft Azure √† l'URL : http://lenomdevotreapplication.azurewebsites.net
 
-Et voil‡ ;)
+Et voil√† ;)
