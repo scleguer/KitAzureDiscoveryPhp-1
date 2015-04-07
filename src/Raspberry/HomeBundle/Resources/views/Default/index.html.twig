@@ -63,11 +63,12 @@
                     var result = '';
                     for (var index = 0; index < data.length; index++) {
                         result += '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-5">';
-                        result += '<img class="img-responsive img-thumbnail thumb" name="thumb" src="/datas/' + data[index] + '" />';
+                        result += '<img class="img-responsive img-thumbnail thumb" name="thumb" data-filename="' + data[index].filename + '" src="' + data[index].content + '" />';
                         result += '</div>';
                     }
                     mainTable.html(result);
-                    largeImage.attr('src', '/datas/' + data[0]);
+                    largeImage.attr('src', data[0].content);
+                    largeImage.attr('data-filename', data[0].filename);
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     $('#infos').html(errorThrown);
@@ -86,10 +87,10 @@
         });
 
         $('#delete').click(function () {
-            var src = largeImage.attr('src');
-            if (!src) return;
+            var filename = largeImage.attr('data-filename');
+            if (!filename) return;
 
-            var filename = src.substring('/datas/'.length, src.length);
+            //var filename = src.substring('/datas/'.length, src.length);
             if (!confirm('Etes-vous sûr de vouloir supprimer cette image : ' + filename + ' ?')) return;
 
             console.log(filename);
