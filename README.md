@@ -51,7 +51,7 @@ D:\home\site\wwwroot>curl -sS https://getcomposer.org/installer | php
 
 ### Installation des bibliothèques
 
-Ensuite, Appelez la commande composer pour installer les dépendances :
+Ensuite, appelez la commande composer pour installer les dépendances :
 
 ```
 D:\home\site\wwwroot>php composer.phar install
