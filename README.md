@@ -11,7 +11,9 @@ Ce projet s'appuie sur le framework PHP Symfony 2.
 
 ## Stockage des images
 
-Cette version utilise le Cache Redis Azure. Ce stockage vient en complément d'un stockage des images sur le système de fichier de l'application. La priorité est donnée à la récupération des images sur le Cache Redis Azure.
+Cette version utilise le Cache Redis Azure. Ce stockage vient en complément d'un 
+stockage des images sur le système de fichier de l'application. La priorité est donnée 
+à la récupération des images sur le Cache Redis Azure.
 
 ### Console KUDU
 
