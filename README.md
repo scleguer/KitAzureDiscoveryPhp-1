@@ -12,7 +12,7 @@ Ce projet s'appuie sur le framework PHP Symfony 2.
 ### Console KUDU
 
 Après avoir déployé les sources de ce projet sur une Application Web Azure,
-vous devrez passer les lignes de commandes ci-dessous pour que application
+vous devrez passer les lignes de commandes ci-dessous pour que l'application
 fonctionne correctement en mode production. Cela permettra d'installer les 
 indispensables bibliothèques ainsi que de générer les fichiers JS et CSS 
 nécessaires.
