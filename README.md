@@ -56,7 +56,7 @@ D:\home\site\wwwroot>php composer.phar install
 Lorsque la configuration des paramètres vous est demandée, laissez toutes les valeurs
 par défaut.
 
-Il se peut qu'à la fin de la procédure d'installation une erreur se produire, 
+Il se peut qu'à la fin de la procédure d'installation une erreur se produise, 
 au moment où un bundle essaie de supprimer le cache, correspondant à la ligne suivante :
 
 ```
