@@ -56,7 +56,27 @@ D:\home\site\wwwroot>php composer.phar install
 Lorsque la configuration des paramètres vous est demandée, laissez toutes les valeurs
 par défaut.
 
+Il se peut qu'à la fin de la procédure d'installation une erreur se produire, 
+au moment où un bundle essaie de supprimer le cache, correspondant à la ligne suivante :
+
+```
+> Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::clearCache
+```
+
+Dans ce cas, utilisez à la place, la commande qui suit :
+
+```
+D:\home\site\wwwroot>php app/console cache:clear --verbose
+```
+
 ### Génération des fichiers
+
+Si l'erreur présentée dans la section précédente s'est produite, il faut alors utiliser,
+avant la prochaine commande, la commande suivante :
+
+```
+D:\home\site\wwwroot>php app/console assets:install --env=prod
+```
 
 Enfin, utilisez la commande qui suit pour générer les fichiers CSS et JS :
 
